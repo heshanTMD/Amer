@@ -3,7 +3,7 @@ p='\033[1;35m'
 clear
 echo -e "\033[1;32m"
 echo "         {Ctrl C} exit "
-echo "[1] Download Virus4 versions {4.6.8}"
+echo "[1] This Download Virus4 versions {4.6.8}"
 echo "[2] Download Virus4 versions {5.0.0}"
 echo ""
 echo -e "$p"
@@ -13,9 +13,9 @@ if [ "$download" -eq "1"  ]; then
  cd
  clear
  termux-setup-storage
- rm -rf $HOME/Virus
- rm -rf $HOME/Virus4.zip
- rm -rf $HOME/Virus4
+ rm -rf $HOME/sarkr
+ rm -rf $HOME/sarkar.zip
+ rm -rf $HOME/sarkar
  clear
  echo -e $g 'Please Wait ===+['$p'>              '$g']\'
  sleep 0.4
@@ -67,12 +67,12 @@ if [ "$download" -eq "1"  ]; then
  clear 
  echo -e "$g+++++++++++++++>$p[Please Wait]$g<++++++++++++++"
  sleep 0.4
- mkdir /sdcard/Virus4
- mkdir /sdcard/Virus4/Encrypt
+ mkdir /sdcard/sarkar
+ mkdir /sdcard/sarkar/Encrypt
  cd
- git clone https://github.com/amerlaceset/Virus
+ git clone https://github.com/loveriya/AnajanSarkar
  cd
- cd Virus
+ cd sarkar
  mv -v Virus4.zip $HOME
  cd
  rm -rf Virus
